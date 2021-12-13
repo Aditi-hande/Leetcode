@@ -1,1 +1,1 @@
-​
+​Refer to kadanes algotithm which follows divide and conquer
