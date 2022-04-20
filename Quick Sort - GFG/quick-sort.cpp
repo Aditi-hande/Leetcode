@@ -34,7 +34,7 @@ class Solution
     {
        int i=low-1;
        int piv=arr[high];
-       for(int j=low;j<=high-1 ;j++){
+       for(int j=low;j<high ;j++){
            if(arr[j]<piv){
                i++;
                swap(arr[i],arr[j]);
