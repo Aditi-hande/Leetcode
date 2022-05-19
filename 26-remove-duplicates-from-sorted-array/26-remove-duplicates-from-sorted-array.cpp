@@ -16,7 +16,7 @@ public:
 			}
 		}
         
-        for(auto ele:nums){cout<<ele<<" ";}
+        //for(auto ele:nums){cout<<ele<<" ";}
     
 		return i+1;}
 };
