@@ -15,6 +15,7 @@ void combisum(vector<int>& candidates, int target, vector<int>currcomb, int curr
             //to avoid repetititon (different from combisum1)
             
             if(i>index && candidates[i]==candidates[i-1]) continue;
+            if(candidates[i]>target)continue;
             currsum+=candidates[i];
             currcomb.push_back(candidates[i]);
             //cout<<currsum<<" ";
