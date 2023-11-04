@@ -5,9 +5,9 @@ class Solution:
         myset=set(nums)
         mans=1
         ans=1
-        for i in range(0,len(nums)):
-            if nums[i]-1 not in myset:
-                temp=nums[i]+1
+        for num in nums:
+            if num-1 not in myset:
+                temp=num+1
                 while(temp in myset):
                     ans=ans+1
                     temp=temp+1
