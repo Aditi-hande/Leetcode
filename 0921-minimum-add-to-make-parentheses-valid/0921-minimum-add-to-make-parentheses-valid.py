@@ -1,19 +1,19 @@
 class Solution:
     def minAddToMakeValid(self, s: str) -> int:
-        st=[]
-        ans=0
+        ans,bal=0,0
         
-        for i in range (len(s)):
-            if s[i]=="(":
-                st.append(i)
+        for char in s:
+            if char=='(':
+                bal+=1
             else:
-                if st:
-                    st.pop()
-                else:
-                    ans+=1
-        while(st):
-            st.pop()
-            ans+=1
+                bal-=1
+            
+            if bal==-1:
+                ans+=1
+                bal=0
+        return ans+bal
+            
         
-        return ans 
+        
+
         
