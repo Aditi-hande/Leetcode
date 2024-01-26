@@ -9,7 +9,7 @@ class Solution:
         halflen = lenbit//2
         
         if k>halflen:
-            return 1 - self.kthGrammar(n-1,k-halflen)
+            return 1 ^ self.kthGrammar(n-1,k-halflen)
         return self.kthGrammar(n-1,k)
         
 
